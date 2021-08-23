@@ -100,8 +100,8 @@ textarea{
   width: 100%;
   margin: 0 auto;
 }
-#player #play img,
-#player #pause img{
+#play img,
+#pause img{
   height: 20px;
   width: 20px;
 }
