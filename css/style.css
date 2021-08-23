@@ -100,6 +100,11 @@ textarea{
   width: 100%;
   margin: 0 auto;
 }
+#player #play img,
+#player #pause img{
+  height: 20px;
+  width: 20px;
+}
 @media(max-width: 750px){
   #area-video{
     width: 100%;
@@ -113,8 +118,4 @@ textarea{
   #area-video{
     height: 200px;
   }
-}
-#player img{
-  height: 20px;
-  width: 20px;
 }
