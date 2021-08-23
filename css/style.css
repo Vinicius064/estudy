@@ -56,6 +56,7 @@ textarea{
   margin: 0 5px;
 }
 #pause{
+  font-size: 20px;
   color: white;
   background: none;
   border: none;
@@ -112,4 +113,8 @@ textarea{
   #area-video{
     height: 200px;
   }
+}
+#player img{
+  height: 20px;
+  width: 20px;
 }
