@@ -47,8 +47,9 @@ nav{
 }
 #play,
 #pause{
-  color: white;
-  font-size: 20px;
+  background: black;
+  border: none;
+  margin-right: 10px;
 }
 #play img,
 #pause img{
