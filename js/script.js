@@ -39,4 +39,4 @@ var cronoPorcentagem = setInterval(function(){
 	if (tempoPorcentagem == 101) {
 		alert('Parabéns, você completou as duas horas')
 	}
-}, 72000)
+}, 36000)
