@@ -52,7 +52,7 @@ class Tempo{
 				t3.classList.remove('opacidade')		
 			}
 			if (tempoPorcentagem == 101) {
-				alert('Parabéns, você completou as duas horas')
+				alert('Parabéns, você completou o tempo')
 			}
 		}, t)
 	}
