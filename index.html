@@ -29,22 +29,39 @@
 		</header>
 		<main>
 			<div id="container">
+				<div id="topo">
+
+					<div>
+						<input type="number" id="tempo" placeholder="Tempo">
+						<button class="btn" onclick="tempo.setTempo()">Enviar</button>
+						<br>
+						<p>(em minutos)</p>
+					</div>
+					<div id="descricao">
+						<input type="text" name="" placeholder="Matéria">
+						<input type="text" name="" placeholder="Descrição">
+					</div>
+
+				</div>
+
+				<div class="break"></div>
+
 				<div id="area-video">
+					
 					<div id="video">
 						<h3>Cole o link a baixo :)</h3>
 					</div>
-				</div>
-				<br>
-				<div id="area-anotacoes">
 					<div>
-						<textarea placeholder="Faça suas anotações aqui!"></textarea>
-					</div>
+						<input id="link" type="text" name="" placeholder="Link do YouTube">
+					<button class="btn" onclick="acao()">Enviar</button>
+					</div>					
 				</div>
-				<div class="break"></div>
-				<br>
-				<div>
-					<input id="link" type="text" name="namelink">
-					<button id="btn" onclick="acao()">Enviar</button>
+				<div id="area-anotacoes">
+					<div>										
+						<textarea placeholder="Faça suas anotações aqui!"></textarea>
+						<button class="btn">Salvar</button>
+						<button class="btn">Carregar</button>
+					</div>
 				</div>
 			</div>
 			<div id="medalhas">

@@ -22,21 +22,39 @@ function pausar(){
 	pauseId.className = 'none'
 	playId.classList.remove("none");
 }
-var cronoPorcentagem = setInterval(function(){
-	if(pause == false){
-		tempoPorcentagem++
-		modBarra.innerHTML = '<div id="barra" style="background: linear-gradient(to right, #82FA58 '+ tempoPorcentagem + '%, gray ' + '0%);"></div>'
+
+
+
+
+class Tempo{
+	constructor(){
+		this.tempo = 1000
 	}
-	if(tempoPorcentagem == 15){
-	t1.classList.remove('opacidade')
+	setTempo(){
+		this.tempo = document.getElementById('tempo').value
+		this.tempo *= 60000
+		this.tempo /= 100
+		this.cronometro(this.tempo)
 	}
-	if(tempoPorcentagem == 50){
-		t2.classList.remove('opacidade')
+	cronometro(t){
+		var cronoPorcentagem = setInterval(function(){
+			if(pause == false){
+				tempoPorcentagem++
+				modBarra.innerHTML = '<div id="barra" style="background: linear-gradient(to right, #82FA58 '+ tempoPorcentagem + '%, gray ' + '0%);"></div>'
+			}
+			if(tempoPorcentagem == 15){
+			t1.classList.remove('opacidade')
+			}
+			if(tempoPorcentagem == 50){
+				t2.classList.remove('opacidade')
+			}
+			if(tempoPorcentagem == 100){
+				t3.classList.remove('opacidade')		
+			}
+			if (tempoPorcentagem == 101) {
+				alert('Parabéns, você completou as duas horas')
+			}
+		}, t)
 	}
-	if(tempoPorcentagem == 100){
-		t3.classList.remove('opacidade')		
-	}
-	if (tempoPorcentagem == 101) {
-		alert('Parabéns, você completou as duas horas')
-	}
-}, 36000)
+}
+tempo = new Tempo()
